@@ -1,5 +1,5 @@
 // INFO: getUrlParams
-const problem1 = () => {
+const problem1 = (): void => {
   const getUrlParams = (
     pathString: string,
     patternString: string,
@@ -101,7 +101,7 @@ const problem2 = () => {
   };
 
   // INFO: Test cases
-  const test1 = () => {
+  const test1 = (): void => {
     type Data = { id: string; name?: string; count: number };
 
     const before: Data = { id: '1', count: 0 };
@@ -110,7 +110,7 @@ const problem2 = () => {
     console.log('TEST 1', objectLiteral(before, after));
   };
 
-  const test2 = () => {
+  const test2 = (): void => {
     type Data = { id?: number; count?: number | string };
 
     const before: Data = {};
@@ -119,7 +119,7 @@ const problem2 = () => {
     console.log('TEST 2', objectLiteral(before, after));
   };
 
-  const test3 = () => {
+  const test3 = (): void => {
     type Data = { id?: string; record: null | object };
 
     const before: Data = { record: null };
